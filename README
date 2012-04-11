@@ -17,4 +17,4 @@ mvn tomcat:run
 Samples:
 curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/plain" --verbose
 curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/xml" --verbose
-curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/json" --verbose
+curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/html" --verbose
