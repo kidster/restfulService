@@ -1,0 +1,20 @@
+Simple Restful Service
+
+install:
+maven-3.0.4
+git
+sun-java6-jre
+sun-java6-jdk
+curl
+
+STEPS:
+git clone git@github.com:kidster/restfulService.git
+move to project:
+mvn clean install
+mvn compile
+mvn tomcat:run
+
+Samples:
+curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/plain" --verbose
+curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/xml" --verbose
+curl -X GET http://localhost:8080/AnonymousTcp/rest/hello -H "Accept: text/json" --verbose
