@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a7133b-324b-453b-b0cf-79bf3b3458d4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/localEngine/localhost/AnonymousTcp/SESSIONS.ser" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rest/anonymoustcp/jaxb/RequestResource.class" afterPath="$PROJECT_DIR$/target/classes/com/rest/anonymoustcp/jaxb/RequestResource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README" afterPath="$PROJECT_DIR$/../README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnonymousTcp.iml" afterPath="$PROJECT_DIR$/AnonymousTcp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/client/RestClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/client/RestClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/jaxb/RequestResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/jaxb/RequestResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="AnonymousTcp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestResource.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RequestResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/jaxb/RequestResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="5" selection-start="694" selection-end="694" vertical-scroll-proportion="0.8142857">
+            <state line="25" column="5" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="25" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0">
+            <state line="42" column="25" selection-start="1515" selection-end="1515" vertical-scroll-proportion="1.1571429">
               <folding />
             </state>
           </provider>
@@ -714,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="45" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" />
@@ -737,7 +725,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rest/anonymoustcp/jaxb/RequestResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="694" selection-end="694" vertical-scroll-proportion="0.8142857">
+        <state line="25" column="5" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="25" selection-start="1515" selection-end="1515" vertical-scroll-proportion="1.1571429">
           <folding />
         </state>
       </provider>
