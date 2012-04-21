@@ -22,7 +22,7 @@
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-http-server:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-rcm:2.2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.12" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-json:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jettison:jettison:1.1" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />

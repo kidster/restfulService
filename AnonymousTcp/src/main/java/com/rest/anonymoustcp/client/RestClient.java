@@ -24,17 +24,12 @@ public class RestClient {
         Client client = Client.create(config);
         WebResource service = client.resource(getBaseURI());
         // Fluent interfaces
+        // Get text xml
         System.out.println(service.path("rest").path("request").accept(
-                MediaType.TEXT_PLAIN).get(ClientResponse.class).toString());
-        // Get plain text
-        System.out.println(service.path("rest").path("request").accept(
-                MediaType.TEXT_PLAIN).get(String.class));
+                MediaType.TEXT_XML).get(String.class));
         // Get XML
         System.out.println(service.path("rest").path("request").accept(
                 MediaType.APPLICATION_XML).get(String.class));
-        // The HTML
-        System.out.println(service.path("rest").path("request").accept(
-                MediaType.APPLICATION_XHTML_XML).get(String.class));
         // GET JSON
         System.out.println(service.path("rest").path("request").accept(
                 MediaType.APPLICATION_JSON).get(String.class));
@@ -43,6 +38,6 @@ public class RestClient {
 
     private static URI getBaseURI() {
         return UriBuilder.fromUri(
-                "http://localhost:8080/com.rest.anonymoustcp.jaxb").build();
+                "http://localhost:8080/AnonymousTcp").build();
     }
 }
