@@ -22,7 +22,7 @@ public class RestClient {
     public static void main(String[] args) {
         ClientConfig config = new DefaultClientConfig();
         Client client = Client.create(config);
-        WebResource service = client.resource(getBaseURI());
+        WebResource service = client.resource(getBaseURI(args[0]));
         // Fluent interfaces
         // Get text xml
         System.out.println(service.path("rest").path("request").accept(
@@ -36,8 +36,8 @@ public class RestClient {
 
     }
 
-    private static URI getBaseURI() {
+    private static URI getBaseURI(String path) {
         return UriBuilder.fromUri(
-                "http://localhost:8080/AnonymousTcp").build();
+                path + "/AnonymousTcp").build();
     }
 }
