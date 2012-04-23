@@ -8,8 +8,6 @@ package com.rest.anonymoustcp.jaxb.model;
  * To change this template use File | Settings | File Templates.
  */
 
-import org.codehaus.jackson.map.annotate.JsonRootName;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 

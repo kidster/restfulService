@@ -8,6 +8,7 @@ package com.rest.anonymoustcp.jaxb;
  * To change this template use File | Settings | File Templates.
  */
 import com.rest.anonymoustcp.jaxb.model.Request;
+import com.sun.jersey.api.client.ClientResponse;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
