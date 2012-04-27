@@ -17,16 +17,18 @@ public class Request {
     private String title;
     private String message;
     private String description;
+    private String endpoint;
 
     public Request()
     {
     }
 
-    public Request(String title, String message, String description)
+    public Request(String title, String message, String description, String endpoint)
     {
         this.title = title;
         this.message = message;
         this.description = description;
+        this.endpoint = endpoint;
     }
 
 
@@ -54,5 +56,13 @@ public class Request {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getEndpoint() {
+        return endpoint;
+    }
+
+    public void setEndpoint(String endpoint) {
+        this.endpoint = endpoint;
     }
 }

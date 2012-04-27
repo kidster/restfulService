@@ -7,17 +7,16 @@ package com.rest.anonymoustcp.client;
  * Time: 9:01 PM
  * To change this template use File | Settings | File Templates.
  */
-import java.net.URI;
-
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.UriBuilder;
-
 import com.rest.anonymoustcp.jaxb.model.Request;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
+
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriBuilder;
+import java.net.URI;
 
 public class RestClient {
     public static void main(String[] args) {
@@ -31,7 +30,7 @@ public class RestClient {
         System.out.println(service.accept(
                 MediaType.APPLICATION_JSON).get(String.class));
         // POST XML
-        ClientResponse response = service.type(MediaType.APPLICATION_XML).post(ClientResponse.class, new Request("New Title","New Message","New Description"));
+        ClientResponse response = service.type(MediaType.APPLICATION_XML).post(ClientResponse.class, new Request("New Title","New Message","New Description", args[0].toString()));
         Request request = response.getEntity(Request.class);
         System.out.println(request.getTitle());
         System.out.println(request.getMessage());

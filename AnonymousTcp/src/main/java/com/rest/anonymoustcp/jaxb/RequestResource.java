@@ -8,7 +8,6 @@ package com.rest.anonymoustcp.jaxb;
  * To change this template use File | Settings | File Templates.
  */
 import com.rest.anonymoustcp.jaxb.model.Request;
-import com.sun.jersey.api.client.ClientResponse;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -16,13 +15,13 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/request")
 @Produces( { MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+@Path("/request")
 public class RequestResource {
     // This method is called if XMLis request
     @GET
     public Request getRequest() {
-        Request request = new Request("Request","Test Message","Description");
+        Request request = new Request("Request","Test Message","Description","Ex. http://localhost:8080");
         return request;
     }
 
