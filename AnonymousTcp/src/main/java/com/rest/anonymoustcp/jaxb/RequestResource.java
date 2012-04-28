@@ -27,9 +27,10 @@ public class RequestResource {
 
     @POST
     public Request getSentRequest(Request request){
-        request.setDescription("Update Description");
+        request.setDescription(null);
+        request.setEndpoint(null);
         //Dont update title
-        request.setMessage("Update Message");
+        request.setMessage("Message Received");
         return request;
     }
 

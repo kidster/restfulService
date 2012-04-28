@@ -22,11 +22,11 @@ mvn tomcat:run
 
 Samples request:
 GET:
-curl -X GET http://localhost:8080/AnonymousTcp/rest/request -H "Accept: application/xml" --verbose | xmllint –format -
-curl -X GET http://localhost:8080/AnonymousTcp/rest/request -H "Accept: application/json" --verbose | python -mjson.tool
+curl -X GET http://localhost:8080/AnonymousTcp/request -H "Accept: application/xml" --verbose | xmllint –format -
+curl -X GET http://localhost:8080/AnonymousTcp/request -H "Accept: application/json" --verbose | python -mjson.tool
 POST:
-curl -X POST http://localhost:8080/AnonymousTcp/rest/request -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><request><description>Test Description</description><message>Test Message</message><title>Real Title</title></request>' -H "Accept: application/xml" -H "Content-Type: application/xml" --verbose | xmllint –format -
-curl -X POST http://localhost:8080/AnonymousTcp/rest/request -d '{"title":"Original Title","description":"Original Description","message":"Original message"}' -H "Accept: application/json" -H "Content-Type: application/json" --verbose | python -mjson.tool
+curl -X POST http://localhost:8080/AnonymousTcp/request -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><request><description>Test Description</description><message>Test Message</message><title>Real Title</title></request>' -H "Accept: application/xml" -H "Content-Type: application/xml" --verbose | xmllint –format -
+curl -X POST http://localhost:8080/AnonymousTcp/request -d '{"title":"Original Title","description":"Original Description","message":"Original message"}' -H "Accept: application/json" -H "Content-Type: application/json" --verbose | python -mjson.tool
 
 Samples concealment
-curl -X POST http://localhost:8080/AnonymousTcp/rest/request/concealment -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><request><description>Test Description</description><message>Test Message</message><title>Real Title</title><endpoint>http://localhost:8080</endpoint></request>' -H "Accept: application/xml" -H "Content-Type: application/xml" --verbose | xml
+curl -X POST http://localhost:8080/AnonymousTcp/request/concealment -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><request><description>Test Description</description><message>Test Message</message><title>Real Title</title><endpoint>http://localhost:8080</endpoint></request>' -H "Accept: application/xml" -H "Content-Type: application/xml" --verbose | xml

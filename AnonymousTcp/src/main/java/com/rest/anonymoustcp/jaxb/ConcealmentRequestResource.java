@@ -10,11 +10,10 @@ package com.rest.anonymoustcp.jaxb;
 
 import com.rest.anonymoustcp.jaxb.model.Request;
 import com.rest.anonymoustcp.service.RequestService;
-import org.springframework.beans.factory.annotation.Autowired;
-import javax.ws.rs.core.HttpHeaders;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBException;
@@ -26,7 +25,6 @@ import java.io.IOException;
 @Path("/request/concealment")
 public class ConcealmentRequestResource {
     // This method is called if XMLis request
-    @Autowired
     private RequestService requestService = new RequestService();
 
     @Context

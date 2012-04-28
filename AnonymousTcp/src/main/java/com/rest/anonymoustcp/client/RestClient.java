@@ -22,7 +22,7 @@ public class RestClient {
     public static void main(String[] args) {
         ClientConfig config = new DefaultClientConfig();
         Client client = Client.create(config);
-        WebResource service = client.resource(getBaseURI(args[0])).path("rest").path("request");
+        WebResource service = client.resource(getBaseURI(args[0])).path("request");
         // Get XML
         System.out.println(service.accept(
                 MediaType.APPLICATION_XML).get(String.class));

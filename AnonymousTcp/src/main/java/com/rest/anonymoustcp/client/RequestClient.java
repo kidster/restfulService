@@ -7,7 +7,6 @@ import org.apache.http.client.protocol.RequestAcceptEncoding;
 import org.apache.http.client.protocol.ResponseContentEncoding;
 import org.apache.http.entity.BasicHttpEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.springframework.stereotype.Component;
 
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
@@ -21,7 +20,6 @@ import java.util.Set;
  * Date: 4/17/12
  * Time: 1:53 PM
  */
-@Component
 public class RequestClient {
 
 
@@ -29,12 +27,6 @@ public class RequestClient {
             throws IOException {
         HttpGet request = new HttpGet(url);
         setHttpHeaders(httpHeaders, request);
-        return executeRequest(request);
-    }
-    public Response.ResponseBuilder get(String url, org.springframework.http.HttpHeaders headers)
-            throws IOException {
-        HttpGet request = new HttpGet(url);
-        setHeaders(headers, request);
         return executeRequest(request);
     }
 
@@ -58,13 +50,6 @@ public class RequestClient {
         HttpPost request = new HttpPost(url);
         request.setEntity(getHttpEntity(body));
         setHttpHeaders(httpHeaders, request);
-        return executeRequest(request);
-    }
-
-    public Response.ResponseBuilder post(String url, org.springframework.http.HttpHeaders headers, String body) throws IOException {
-        HttpPost request = new HttpPost(url);
-        request.setEntity(getHttpEntity(body));
-        setHeaders(headers, request);
         return executeRequest(request);
     }
 
@@ -111,13 +96,6 @@ public class RequestClient {
         client.addRequestInterceptor(new RequestAcceptEncoding());
         client.addResponseInterceptor(new ResponseContentEncoding());
         return client;
-    }
-    private void setHeaders(org.springframework.http.HttpHeaders headers, HttpRequestBase request) {
-        if (!headers.isEmpty()){
-            for (String header: headers.keySet()){
-                request.addHeader(header, headers.get(header).toString());
-            }
-        }
     }
 
     private void setHttpHeaders(HttpHeaders httpHeaders, HttpRequestBase request) {

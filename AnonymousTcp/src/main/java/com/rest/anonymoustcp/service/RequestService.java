@@ -3,8 +3,6 @@ package com.rest.anonymoustcp.service;
 import com.rest.anonymoustcp.client.RequestClient;
 import com.rest.anonymoustcp.config.JAXBContextResolver;
 import com.rest.anonymoustcp.jaxb.model.Request;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response.ResponseBuilder;
@@ -20,14 +18,14 @@ import java.io.StringWriter;
  * Time: 8:09 PM
  * To change this template use File | Settings | File Templates.
  */
-@Component
+
 public class RequestService {
-    @Autowired
+
     private RequestClient requestClient = new RequestClient();
 
     public ResponseBuilder sendRequest(HttpHeaders httpHeaders, Request request)
             throws IOException, JAXBException {
-        String url = request.getEndpoint() + "/AnonymousTcp/rest/request";
+        String url = request.getEndpoint() + "/AnonymousTcp/request";
         String body = marshallObjectToString(request);
         return requestClient.post(url, httpHeaders, body);
     }
